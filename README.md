@@ -1,4 +1,4 @@
-<h1>Jack Sparrow (PHP Checkpoint 3, WCS)</h1>
+<h1>Jack Sparrow (PHP Checkpoint 3, WCS Web PHP)</h1>
 
 ### The goal is to create a game "Jack Sparrow", with a boat where you have to find a treasure
 
