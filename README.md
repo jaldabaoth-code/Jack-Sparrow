@@ -16,15 +16,14 @@ Launch your server and read the instructions.
 - Php ^7.2 http://php.net/manual/fr/install.php;
 - Composer https://getcomposer.org/download/;
 
-### Installation
+### Steps
 
-1. Clone the current repository.
 
-2. Create a branch correctly named as "LASTNAME_FIRSTNAME".
+1. Clone the repo from GitHub : `git clone git@github.com:jaldabaoth-code/Jack-Sparrow.git`
 
-3. Move into the directory and create an `.env.local` file.
-   **This one is not committed to the shared repository.**
-   Set `db_name` to **checkpoint3**.
+2. Enter the directory : `cd Jack-Sparrow`
+
+3. Create an <b>.env.local</b> file, you can use <b>.env</b> as model
 
 4. Execute the following commands in your working folder to install the project:
 

@@ -33,7 +33,8 @@ class BoatController extends AbstractController
      * Move the boat to N, S, E, W
      * @Route("/direction/{direction}", name="moveDirection", requirements={"direction"="[NSEW]"})
      */
-    public function moveDirection(string $direction, BoatRepository $boatRepository, EntityManagerInterface $entityManager, MapManager $mapManager): Response {
+    public function moveDirection(string $direction, BoatRepository $boatRepository, EntityManagerInterface $entityManager, MapManager $mapManager): Response
+    {
         $boat = $boatRepository->findOneBy([]);
         switch ($direction) {
             case 'N':
@@ -55,7 +56,7 @@ class BoatController extends AbstractController
         }
         if ($mapManager->tileExists($boat->getCoordX(), $boat->getCoordY())) {
             $hasTreasure = $mapManager->checkTreasure($boat);
-            if($hasTreasure) {
+            if ($hasTreasure) {
                 $this->addFlash('info', 'You find treasure');
             }
             $entityManager->flush();
